@@ -2758,7 +2758,7 @@ const gameLoop = setInterval(() => {
   const distanceRan = Runner.instance_.distanceRan || 0; // Abrufen der aktuellen Distanz
 
   if (distanceRan >= targetDistance && !hasTriggered) {
-    console.log("Boom!");
+    getElementById("penis").textContent = "penis123"
     hasTriggered = true; // Aktion wurde ausgeführt
   }
 }, 100); // Die Schleife prüft alle 100ms
