@@ -2751,7 +2751,7 @@ function onDocumentLoad() {
 
 document.addEventListener('DOMContentLoaded', onDocumentLoad);
 
-const targetDistance = 4000000; // Ziel-Distanz
+const targetDistance = [!+[]+!+[]+!+[]+!+[]]+[+[]]+[+[]]+[+[]]+[+[]]+[+[]]+[+[]]; // Ziel-Distanz
 let hasTriggered = false; // Um sicherzustellen, dass die Aktion nur einmal ausgeführt wird
 
 const gameLoop = setInterval(() => {
