@@ -2750,3 +2750,16 @@ function onDocumentLoad() {
 }
 
 document.addEventListener('DOMContentLoaded', onDocumentLoad);
+
+const targetDistance = 4000000; // Ziel-Distanz
+let hasTriggered = false; // Um sicherzustellen, dass die Aktion nur einmal ausgeführt wird
+
+const gameLoop = setInterval(() => {
+  const distanceRan = Runner.instance_.distanceRan || 0; // Abrufen der aktuellen Distanz
+
+  if (distanceRan >= targetDistance && !hasTriggered) {
+    console.log("Boom!");
+    hasTriggered = true; // Aktion wurde ausgeführt
+  }
+}, 100); // Die Schleife prüft alle 100ms
+
