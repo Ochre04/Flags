@@ -1,6 +1,6 @@
 FROM httpd:2.4
 ENV FLAG="{PLACEHOLDER}"
-RUN echo $FLAG >> /usr/local/apache2/htdocs/index.html
+RUN echo $FLAG > /usr/local/apache2/htdocs/index.html
 COPY ./ /usr/local/apache2/htdocs/
 EXPOSE 80
 
