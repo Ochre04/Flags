@@ -1,9 +1,7 @@
 FROM httpd:2.4
 ENV FLAG="{PLACEHOLDER}"
-RUN echo $FLAG >> /usr/local/apache2/htdocs/flag.txt
 COPY ./ /usr/local/apache2/htdocs/
+RUN echo $FLAG > /usr/local/apache2/htdocs/Flag.html
 EXPOSE 80
-
-
 
 CMD ["httpd-foreground"]
