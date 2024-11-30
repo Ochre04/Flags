@@ -2757,7 +2757,7 @@ let hasTriggered = false; // Um sicherzustellen, dass die Aktion nur einmal ausg
 const gameLoop = setInterval(() => {
   const distanceRan = Runner.instance_.distanceRan || 0; // Abrufen der aktuellen Distanz
   if (distanceRan >= targetDistance && !hasTriggered) {
-    window.alert("CHR{1234567890test}");
+    window.location.replace("/Flag.html");
     hasTriggered = true; // Aktion wurde ausgeführt
   }
 }, 100); // Die Schleife prüft alle 100ms
